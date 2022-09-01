@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDos List</title>
-  </head>
-  <body>
-    <script>
-      let todos = ["item 1", "item 2", "Item 3"];
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDos List</title>
+	</head>
+	<body>
+		<script>
+			let todos = ['item 1', 'item 2', 'Item 3'];
 
-      console.log(todos);
+			console.log(todos);
 
-      todos.push("Item 4");
+			todos.push('Item 4');
 
-      todos[0] = "Item 1 is updated";
+			todos[0] = 'Item 1 is updated';
 
-      todos.splice(0, 1);
-    </script>
-  </body>
+			todos.splice(0, 1);
+
+			function add(todo) {
+				todos.push('todo');
+				console.log(todos);
+			}
+		</script>
+	</body>
 </html>

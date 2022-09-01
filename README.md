@@ -18,4 +18,4 @@
 
 #### - It should have a function to edit a todo
 
-#### - It should have a function to move a todo
+#### - It should have a function to delete a todo

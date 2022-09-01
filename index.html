@@ -9,20 +9,23 @@
 	<body>
 		<script>
 			let todos = ['item 1', 'item 2', 'Item 3'];
-
-			function add(todo) {
-				todos.push('todo');
-				console.log(todos);
+			// It should have a function to display the todos
+			function displayTodos() {
+				console.log('My Todos: ', todos);
 			}
-
-			function edit(position, newValue) {
+			// It should have a function add todos
+			function addTodo(todo) {
+				todos.push(todo);
+				displayTodos();
+			}
+			// It should have a function to change todos.
+			function changeTodo(position, newValue) {
 				todos[position] = newValue;
-				console.log(todos);
+				displayTodos();
 			}
-
-			function remove(position) {
+			// It should have a function to delete todos.
+			function deleteTodo(position) {
 				todos.splice(position, 1);
-				console.log(todos);
 			}
 		</script>
 	</body>

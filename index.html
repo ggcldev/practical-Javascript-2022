@@ -10,16 +10,13 @@
 		<script>
 			let todos = ['item 1', 'item 2', 'Item 3'];
 
-			console.log(todos);
-
-			todos.push('Item 4');
-
-			todos[0] = 'Item 1 is updated';
-
-			todos.splice(0, 1);
-
 			function add(todo) {
 				todos.push('todo');
+				console.log(todos);
+			}
+
+			function edit(position, newValue) {
+				todos[position] = newValue;
 				console.log(todos);
 			}
 		</script>
